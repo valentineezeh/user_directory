@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1200px) {
+    .add_user_left_section {
+        width: 40% !important;
+    }
+
+    .add_user_right_section {
+        width: 60% !important;
+        margin-left: 40% !important;
+    }
+
+    .add_user_form_div {
+        width: 64% !important;
+        margin-left: 18% !important;
+        margin-right: 18% !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .add_user_left_section {
+        display: none;
+    }
+
+    .add_user_right_section {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .add_user_form_div {
+        width: 94% !important;
+        margin-left: 3% !important;
+        margin-right: 3% !important;
+    }
+
+    .add_user_mini_nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
