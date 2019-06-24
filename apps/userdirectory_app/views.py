@@ -53,3 +53,8 @@ def user_list(request):
     users = UserDirectory.objects.all()
     context = {'users': users}
     return render(request, 'userdirectory_app/user_list.html', context)
+
+def user_delete(request, id):
+    user = UserDirectory.objects.get(id=id)
+    user.delete()
+    return redirect(user_list)

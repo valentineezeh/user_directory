@@ -6,5 +6,6 @@ urlpatterns = [
     url(r'^$', views.index),
     path('add/', views.add_user),
     path('list/', views.user_list),
-    path('create/', views.create)
+    path('create/', views.create),
+    url(r'^delete/(?P<id>\d+)$', views.user_delete)
 ]

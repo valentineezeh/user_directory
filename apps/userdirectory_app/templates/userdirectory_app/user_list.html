@@ -14,7 +14,6 @@
         </title>
     </head>
     <body>
-<div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="/">
                 <h5>
@@ -39,7 +38,6 @@
                   </ul>
                 </div>
               </nav>
-</div>
           
     <div class="container py-5" >
      <div class="row">
@@ -55,6 +53,9 @@
                             <th scope="col">
                               Created at
                             </th>
+                            <th scope="col">
+                              Actions
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,13 +64,26 @@
                         <td>{{ user.name }}</td>
                         <td>{{ user.email }}</td>
                         <td>{{ user.created_at }}</td>
+                        <td>
+                          <a href="/delete/{{ user.id }}">
+                            Delete
+                          </a>
+                        </td>
                     </tr>
                     {% endfor %}
                     </tbody>
               </table>
      </div>
     </div>
-    <div class="footer" style="margin-top: 20%;">
+    <div class="footer" style="	z-index: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+    padding: 20px;">
             <footer>
                <p>&copy; Copyright 2019 UserDirectory</p>
             </footer>
